@@ -1,6 +1,9 @@
 # Vue Typescript Hotel Project
-![test-vue](https://res.cloudinary.com/juegos-cramer/image/upload/v1640749915/hotels-vue_auujh1.png)
+![test-vue](https://user-images.githubusercontent.com/42642576/148015429-526fe4bf-ed5e-4ab4-8680-0f43b5782768.png)
+
 https://vue-typescript-hotel-project.vercel.app/
+
+
 ## Project setup
 
 ```
