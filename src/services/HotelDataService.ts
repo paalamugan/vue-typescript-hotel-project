@@ -1,11 +1,14 @@
-import api from "@/configs/common";
+import hotels from "../data/hotels.json";
 
+const sleep = (duration = 1000) => new Promise((resolve) => setTimeout(() => resolve(null), duration));
 class HotelDataService {
-  getAll() {
-    return api.get("/yickson/serverjson/hotels");
+  async getAll() {
+    await sleep(500);
+    return { data: hotels };
   }
-  getOne(id: number) {
-    return api.get(`/yickson/serverjson/hotels/${id}`);
+  async getOne(id: number) {
+    await sleep(500);
+    return { data: hotels.find((hotel) => hotel.id === +id) };
   }
 }
 

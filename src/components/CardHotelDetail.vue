@@ -1,9 +1,9 @@
 <template>
   <v-card class="my-12">
-    <v-row justify="center" class="py-12">
+    <v-row justify="center" class="py-12" v-bind:style="[{gap: '20px'}]">
       <v-col cols="12" xs="12" md="10" lg="5" xl="5">
         <div class="text-center">
-          <v-img :src="hotel.image" max-width="468" contain></v-img>
+          <v-img :src="hotel.image" max-height="400" cover class="rounded-xl"></v-img>
         </div>
       </v-col>
       <v-col cols="12" xs="12" md="10" lg="4" xl="4">

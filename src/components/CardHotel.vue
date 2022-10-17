@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-img :src="hotel.image" max-height="268" contain></v-img>
+    <v-img :src="hotel.image" max-height="268" cover></v-img>
     <v-row justify="space-between" align="center">
       <v-col>
         <v-card-title>{{ hotel.name }}</v-card-title>
@@ -60,7 +60,7 @@ export default class CardHotel extends Vue {
   @Prop() hotel!: Hotel;
 
   goDetail(id: number): void {
-    this.$router.push(`/hotel-detail/${id}`);
+    this.$router.push(`/hotel/${id}`);
   }
 }
 </script>
