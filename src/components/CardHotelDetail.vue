@@ -1,5 +1,5 @@
 <template>
-  <v-card class="my-12">
+  <v-card class="my-12" v-if="hotel">
     <v-row justify="center" class="py-12" v-bind:style="[{gap: '20px'}]">
       <v-col cols="12" xs="12" md="10" lg="5" xl="5">
         <div class="text-center">
@@ -8,7 +8,7 @@
       </v-col>
       <v-col cols="12" xs="12" md="10" lg="4" xl="4">
         <v-rating
-          :value="hotel.attributes?.rarity"
+          :value="hotel.attributes?.rarity || 1"
           color="amber"
           half-increments
           readonly
