@@ -1,8 +1,14 @@
 <template>
   <v-app>
     <v-app-bar app color="teal darken-4" dark>
-      <v-icon large color="white"> mdi-domain </v-icon>
-      <v-toolbar-title class="mx-5">Hotels Management</v-toolbar-title>
+      <div
+        class="d-flex justify-center align-center"
+        :style="[{ cursor: 'pointer' }]"
+        @click="goToHome()"
+      >
+        <v-icon large color="white"> mdi-domain </v-icon>
+        <v-toolbar-title class="mx-5">Hotels Management</v-toolbar-title>
+      </div>
       <v-spacer></v-spacer>
       <v-btn icon @click="changeTheme()">
         <v-icon v-if="isDarkMode"> mdi-moon-waning-crescent </v-icon>
@@ -30,13 +36,13 @@ export default Vue.extend({
   name: "App",
 
   data: () => ({
-    isDarkMode: false
+    isDarkMode: false,
   }),
-  
+
   computed: {
     year() {
       return new Date().getFullYear();
-    }
+    },
   },
 
   methods: {
@@ -44,12 +50,17 @@ export default Vue.extend({
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
       this.isDarkMode = this.$vuetify.theme.dark;
     },
+    goToHome() {
+      this.$router.push("/");
+    },
   },
 
   mounted() {
-    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-schema: dark)').matches; 
+    const isDarkMode =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-schema: dark)").matches;
     this.$vuetify.theme.dark = isDarkMode;
     this.isDarkMode = isDarkMode;
-  }
+  },
 });
 </script>
