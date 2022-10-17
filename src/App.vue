@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="teal darken-4" dark>
+    <v-app-bar app color="teal darken-4">
       <v-icon large color="white"> mdi-domain </v-icon>
       <v-toolbar-title class="mx-5">Hotels Management</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -13,7 +13,7 @@
     <v-main>
       <router-view />
     </v-main>
-    <v-footer dark color="teal darken-4">
+    <v-footer color="teal darken-4">
       <v-card class="flex" flat tile>
         <v-card-text class="py-2 white--text text-center">
           Paalamugan — <strong>Copyright &copy; {{ year }}</strong>
