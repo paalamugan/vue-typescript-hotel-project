@@ -13,7 +13,7 @@
     <v-main>
       <router-view />
     </v-main>
-    <v-footer dark padless>
+    <v-footer dark color="teal darken-4">
       <v-card class="flex" flat tile>
         <v-card-text class="py-2 white--text text-center">
           Paalamugan — <strong>Copyright &copy; {{ year }}</strong>
