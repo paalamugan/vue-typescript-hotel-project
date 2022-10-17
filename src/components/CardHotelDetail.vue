@@ -8,7 +8,7 @@
       </v-col>
       <v-col cols="12" xs="12" md="10" lg="4" xl="4">
         <v-rating
-          :value="hotel.attributes.rarity"
+          :value="hotel.attributes?.rarity"
           color="amber"
           half-increments
           readonly
