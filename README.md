@@ -1,5 +1,5 @@
 # Vue Typescript Hotel Project
-![test-vue](https://user-images.githubusercontent.com/42642576/148015429-526fe4bf-ed5e-4ab4-8680-0f43b5782768.png)
+![image](https://user-images.githubusercontent.com/42642576/196241023-4cf4854a-62a0-46d4-a5a3-13739294d4ea.png)
 
 https://vue-typescript-hotel-project.vercel.app/
 
