@@ -1,7 +1,7 @@
 # Vue Typescript Hotel Project
 ![image](https://user-images.githubusercontent.com/42642576/196241023-4cf4854a-62a0-46d4-a5a3-13739294d4ea.png)
 
-https://vue-typescript-hotel-project.vercel.app/
+https://vue-hotel-management.vercel.app/
 
 
 ## Project setup
